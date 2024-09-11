@@ -10,15 +10,16 @@ const handleSearch = (e: Event) => {
 
 <template>
   <div class="">
-    <v-form @submit.prevent="handleSearch">
-      <v-text-field
-        v-model="search"
-        label="Search City"
-        placeholder="Enter a city name"
-        outlined
-      />
-    </v-form>
+    
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.label-search {
+  color: #f3f4f6;
+}
+
+#search {
+  color: #f3f4f6 !important;
+}
+</style>

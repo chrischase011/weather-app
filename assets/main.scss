@@ -19,4 +19,20 @@ html,
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
+    background-image: linear-gradient(to right top, #051937, #182a6b, #49369c, #8936c7, #d412e7);
+}
+
+.v-field--variant-outlined {
+    &>.v-field__outline {
+        color: #f3f4f6 !important;
+    }
+
+}
+
+input {
+    color: #f3f4f6 !important;
+
+    &::placeholder {
+        color: #f3f4f6 !important;
+    }
 }
