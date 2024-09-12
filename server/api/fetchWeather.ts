@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
   // const data = {
   //   "coord": { "lon": 121.0235, "lat": 14.5569 },
   //   "weather": [
-  //     { "id": 803, "main": "Clouds", "description": "broken clouds", "icon": "04d" }
+  //     { "id": 803, "main": "Clouds", "description": "broken clouds", "icon": "10d" }
   //   ],
   //   "base": "stations",
   //   "main": {

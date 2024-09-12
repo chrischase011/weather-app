@@ -14,9 +14,9 @@ async function fetchWeatherData(cityName: string) {
     `/api/fetchWeather?city=${cityName}`
   );
 
-  if (_weather.value === null) {
-    await refresh();
-  }
+  // if (_weather.value === null) {
+  //   await refresh();
+  // }
 
   if (_weather.value) {
     weather.value = _weather.value || "Unknown weather data";
@@ -49,7 +49,7 @@ onMounted(() => {
 
 <template>
   <main class="tw-flex tw-justify-center">
-    <div class="tw-container tw-py-8 tw-h-screen">
+    <div class="tw-container tw-pt-8 tw-h-screen">
       <v-form @submit.prevent="handleSearch">
         <v-text-field
           id="search"
@@ -70,4 +70,8 @@ onMounted(() => {
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.label-search {
+  color: #f3f4f6 !important;
+}
+</style>
