@@ -68,7 +68,7 @@ const updateBackgroundImage = (imagePath: string) => {
 watch(
   () => props.weather,
   (newWeatherVal) => {
-    if (newWeatherVal) {
+    if (newWeatherVal.name) {
       wCity.value = newWeatherVal.name;
       weatherCategory.value = newWeatherVal.weather[0].main;
       weatherDescription.value = newWeatherVal.weather[0].description;
@@ -190,12 +190,12 @@ const capDescription = computed(() => {
 
     <v-divider></v-divider>
 
-    <v-card-actions>
+    <!-- <v-card-actions>
       <v-btn
         :text="!expand ? 'Full Report' : 'Hide Report'"
         @click="expand = !expand"
       ></v-btn>
-    </v-card-actions>
+    </v-card-actions> -->
   </v-card>
 </template>
 
