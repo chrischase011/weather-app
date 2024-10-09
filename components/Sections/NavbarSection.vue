@@ -9,13 +9,6 @@
         <v-icon icon="mdi-weather-pouring" /> WeatherApp
       </nuxt-link>
     </div>
-    <div
-      id="nav-links"
-      class="tw-flex tw-items-center tw-gap-5 tw-text-base tw-font-semibold tw-text-white"
-    >
-      <nuxt-link to="/"> Home </nuxt-link>
-      <nuxt-link to="/about"> About </nuxt-link>
-    </div>
   </nav>
 </template>
 
