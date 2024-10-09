@@ -1,6 +1,22 @@
 <script setup lang="ts">
 import { fetchLocation } from "~/composables/api/fetchLocation";
 
+useHead({
+  title: "Chase Weather App",
+  meta: [
+    {
+      name: "description",
+      content: "Weather Application using Nuxt and OpenWeatherMap API",
+    },
+  ],
+});
+
+useSeoMeta({
+  ogTitle: "Chase Weather App",
+  description: "Weather Application using Nuxt and OpenWeatherMap API",
+  ogDescription: "Weather Application using Nuxt and OpenWeatherMap API",
+})
+
 const search = ref("");
 const _city = ref("");
 const weather = ref("");

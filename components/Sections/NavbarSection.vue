@@ -6,7 +6,7 @@
   >
     <div id="logo" class="">
       <nuxt-link to="/" class="tw-text-2xl tw-font-bold tw-text-lime-400">
-        <v-icon icon="mdi-weather-pouring" /> WeatherApp
+        <v-icon icon="mdi-weather-pouring" />WeatherApp
       </nuxt-link>
     </div>
   </nav>
