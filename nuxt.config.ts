@@ -32,6 +32,9 @@ export default defineNuxtConfig({
     '@pinia-plugin-persistedstate/nuxt',
     '@nuxt/eslint',
   ],
+  plugins: [
+    { src: '~/plugins/analytics.ts', mode: 'client' },
+  ],
   vite: {
     vue: {
       template: {
