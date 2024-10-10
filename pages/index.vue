@@ -79,7 +79,7 @@ onMounted(() => {
 
 <template>
   <main class="tw-flex tw-justify-center">
-    <div class="tw-container tw-pt-8 tw-h-screen">
+    <div class="tw-container tw-pt-8 tw-px-4 lg:tw-px-0 tw-h-screen">
       <v-form class="tw-pb-10" @submit.prevent="handleSearch">
         <v-text-field
           id="search"
